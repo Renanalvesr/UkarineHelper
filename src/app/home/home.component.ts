@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl} from '@angular/forms';
+
 
 @Component({
   selector: 'app-home',
@@ -11,5 +13,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  panelColor = new FormControl('red');
 
+  console = console;
 }

@@ -1,2 +1,13 @@
-<p>home works!</p>
+<mat-form-field appearance="fill">
+    <mat-label>Panel color</mat-label>
+    <br>
+    <br>
+    <mat-select [formControl]="panelColor"
+                panelClass="language-panel-{{panelColor.value}}">
+                <mat-option   value="red">"example-panel-{{panelColor.value}}</mat-option>
+                <br>
+      <mat-option value="green">Green</mat-option>
+      <mat-option value="blue">Blue</mat-option>
+    </mat-select>
+  </mat-form-field>
 <app-menu></app-menu>
